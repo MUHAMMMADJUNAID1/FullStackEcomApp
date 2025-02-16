@@ -69,7 +69,7 @@ export const loginUser = async (req,res) => {
     } catch (error) {
       return    res.status(500).json({
             success : false,
-            message : "Unknown Error occured while LoginUser"
+            message : `Unknown Error occured while LoginUser ${error}`
         })
     }
 }
