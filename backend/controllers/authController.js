@@ -35,7 +35,7 @@ export const registerUser = async(req,res) => {
     } catch (error) {
      return  res.status(500).json({
             success : false,
-            message : "Unknown Error occured while User  Creating"
+            message : `Unknown Error occured while User Creating ${error}`
         })
     }
 }
